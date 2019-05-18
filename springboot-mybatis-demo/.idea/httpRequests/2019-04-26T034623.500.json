@@ -1,0 +1,8 @@
+{
+  "timestamp": 1556264783646,
+  "status": 500,
+  "error": "Internal Server Error",
+  "exception": "java.lang.RuntimeException",
+  "message": "No message available",
+  "path": "/project-file/2"
+}

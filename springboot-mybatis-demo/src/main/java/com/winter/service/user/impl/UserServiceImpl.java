@@ -39,7 +39,6 @@ public class UserServiceImpl implements UserService {
         //22
         //333
         //333456
-
         return userMapper.selectAllUser();
     }
 }

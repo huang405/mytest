@@ -35,6 +35,7 @@ public class UserServiceImpl implements UserService {
         //将参数传给这个方法就可以实现物理分页了，非常简单
         //111
         PageHelper.startPage(pageNum, pageSize);
+        //22
         return userMapper.selectAllUser();
     }
 }

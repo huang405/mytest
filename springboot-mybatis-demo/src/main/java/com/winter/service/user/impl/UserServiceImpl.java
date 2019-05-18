@@ -37,7 +37,6 @@ public class UserServiceImpl implements UserService {
         //111
         PageHelper.startPage(pageNum, pageSize);
         //22
-        //333
         //333456
         return userMapper.selectAllUser();
     }

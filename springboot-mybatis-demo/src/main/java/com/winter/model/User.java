@@ -9,6 +9,16 @@ public class User {
 
     private String phone;
 
+    public User() {
+    }
+
+    public User(Integer userId, String userName, String password, String phone) {
+        this.userId = userId;
+        this.userName = userName;
+        this.password = password;
+        this.phone = phone;
+    }
+
     public Integer getUserId() {
         return userId;
     }
@@ -22,7 +32,7 @@ public class User {
     }
 
     public void setUserName(String userName) {
-        this.userName = userName == null ? null : userName.trim();
+        this.userName = userName;
     }
 
     public String getPassword() {
@@ -30,7 +40,7 @@ public class User {
     }
 
     public void setPassword(String password) {
-        this.password = password == null ? null : password.trim();
+        this.password = password;
     }
 
     public String getPhone() {
@@ -38,6 +48,6 @@ public class User {
     }
 
     public void setPhone(String phone) {
-        this.phone = phone == null ? null : phone.trim();
+        this.phone = phone;
     }
 }

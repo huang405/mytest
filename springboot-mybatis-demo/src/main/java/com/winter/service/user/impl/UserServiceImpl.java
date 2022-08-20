@@ -37,7 +37,24 @@ public class UserServiceImpl implements UserService {
         //111
         PageHelper.startPage(pageNum, pageSize);
         //22
-        //333456
+        //333456 limit 1,20
         return userMapper.selectAllUser();
     }
+
+    @Override
+    public User selectByPrimaryKey(Integer userId){
+
+        return userMapper.selectByPrimaryKey(userId);
+    }
+
+    @Override
+    public int updateByPrimaryKey(User record) {
+        User user = userMapper.selectByPrimaryKey(record.getUserId());
+        if (user != null) {
+            return userMapper.updateByPrimaryKey(record);
+        }
+        return 0;
+    }
+
+
 }
